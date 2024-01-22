@@ -1,0 +1,1 @@
+GaussianProcessRegressor(kernel=1**2 * RBF(length_scale=0.5) * ExpSineSquared(length_scale=1, periodicity=1) + WhiteKernel(noise_level=1) + ExpSineSquared(length_scale=1, periodicity=1))
