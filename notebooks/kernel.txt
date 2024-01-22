@@ -1,0 +1,1 @@
+0.21**2 * RBF(length_scale=0.812) * ExpSineSquared(length_scale=1, periodicity=1) + WhiteKernel(noise_level=1.36e-10) + ExpSineSquared(length_scale=2.68, periodicity=1.05)
