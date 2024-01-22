@@ -5,3 +5,6 @@
 darknet/
 ultralytics/
 notebooks/wandb/
+notebooks/datasets
+notebooks/yolo_labels
+notebooks/runs
