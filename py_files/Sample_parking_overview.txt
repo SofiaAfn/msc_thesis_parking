@@ -1,0 +1,32 @@
+Sample_parking.py overview 
+
+The provided code appears to be generating various plots related to parking spot demand and usage. Here is a simplified breakdown of what the code does:
+
+1. Initialization: Sets up the number of days, a constant for standard deviation (sigma), and creates empty arrays for storing day and parking demand data.
+
+2. Data Generation: The code generates random parking demand data over time, with some randomness and periodicity added to simulate real-world scenarios. The data is then clipped to ensure non-negative values.
+
+3. Usage Simulation: Simulates the number of parking spots used based on the generated demand and the assumption of a fixed number of parking spots available. The simulated usage is also rounded to whole numbers.
+
+4. Sampling and Noise Addition: Randomly samples a subset of data points for observations and adds noise to the sampled usage values.
+
+5. Model Estimation: Defines functions for predicting demand and usage based on a given estimate. The `least_squares` optimization method is used to find the estimate that minimizes the residual between the observed usage and the predicted usage.
+
+6. Optimal Model Estimation: Performs the same optimization process as above but using the true (non-noisy) sampled usage values.
+
+7. Visualization: Generates various plots using the Plotly library to visualize the parking spot demand, usage, observations, and estimated values.
+
+Here is a list of technical terms used in the code:
+
+- sigma: A constant representing the standard deviation used for adding randomness to the parking demand data.
+- least_squares: An optimization method used to find the estimate that minimizes the difference between the observed and predicted values.
+- residual: The difference between the observed and predicted values.
+- num_spots: The number of available parking spots.
+- sample_ind: Indices of randomly sampled data points for observations.
+- view_day: An array representing the range of days for visualizing the data.
+- predicted_demand: The predicted parking demand values based on the estimated model.
+- predicted_usage: The predicted parking usage values based on the estimated model.
+- optimal_estimate: The estimated parameters for the model using the true (non-noisy) sampled usage values.
+- optimal_residual: The difference between the observed and predicted values using the optimal estimate.
+
+The code generates several plot images related to parking demand, usage, observations, and estimated values in different scenarios.
